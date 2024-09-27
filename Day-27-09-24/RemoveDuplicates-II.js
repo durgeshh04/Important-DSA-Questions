@@ -49,10 +49,11 @@ nums is sorted in non-decreasing order.
 // Solution:
 
 var removeDuplicates = function (nums) {
-  let k = 2;
-  let n = nums.length;
+  if (nums.length <= 2) return nums.length;
 
-  for (let i = 0; i < n; i++) {
+  let k = 2;
+
+  for (let i = 2; i < nums.length; i++) {
     if (nums[i] !== nums[k - 2]) {
       nums[k] = nums[i];
       k++;
