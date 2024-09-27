@@ -46,59 +46,21 @@ Constraints:
 nums is sorted in non-decreasing order.
 */
 
-
-
 // Solution:
 
-var removeDuplicates = function(nums) {
-    
+var removeDuplicates = function (nums) {
+  let k = 2;
+  let n = nums.length;
+
+  for (let i = 0; i < n; i++) {
+    if (nums[i] !== nums[k - 2]) {
+      nums[k] = nums[i];
+      k++;
+    }
+  }
+
+  return k;
 };
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+const result = removeDuplicates([1, 1, 1, 2, 2, 3]);
+console.log(result);
