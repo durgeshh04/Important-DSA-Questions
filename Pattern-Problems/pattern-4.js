@@ -10,45 +10,13 @@
 
 */
 
-
-
-function patternFour(n){
-    for(let i = 1; i <= n; i++){
-        for(let j = 1; j <= i; j++){
-            process.stdout.write(i.toString() + " ");
-        }
-        console.log();
-        
+function patternFour(n) {
+  for (let i = 1; i <= n; i++) {
+    for (let j = 1; j <= i; j++) {
+      process.stdout.write(i.toString() + " ");
     }
+    console.log();
+  }
 }
 
-patternFour(6)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+patternFour(6);
