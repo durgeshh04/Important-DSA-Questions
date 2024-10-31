@@ -1,5 +1,5 @@
 var productExceptSelf = function (nums) {
-  let resultArray = []
+  let resultArray = [];
   let leftProduct = 1;
   let rightProduct = 1;
 
@@ -8,7 +8,7 @@ var productExceptSelf = function (nums) {
     leftProduct *= nums[i];
   }
 
-  for(let i = nums.length-1; i >= 0; i--){
+  for (let i = nums.length - 1; i >= 0; i--) {
     resultArray[i] *= rightProduct;
     rightProduct *= nums[i];
   }
