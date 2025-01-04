@@ -64,6 +64,44 @@ class LinkedList {
         curr.next = node;
     }
 
+    removeTop() {
+        if (!this.head) {
+            return;
+        }
+        this.head = this.head.next;
+    }
+
+    removeLast() {
+        if (!this.head) {
+            return;
+        }
+        let curr = this.head;
+        while (curr.next.next) {
+            curr = curr.next;
+        }
+        curr.next = null;
+    }
+
+    removeAtIdx(idx) {
+        if (idx < 0 || idx > this.size()) {
+            console.log("Invalid index in remove at index method");
+        }
+
+        if (idx == 0) {
+            this.head = this.head.next;
+            return;
+        }
+
+        let curr = this.head;
+        for (let i = 0; i < idx - 1; i++) {
+            curr = curr.next;
+        }
+
+        if (curr.next) {
+            curr.next = curr.next.next;
+        }
+    }
+
     printList() {
         let curr = this.head;
         while (curr) {
@@ -83,5 +121,8 @@ LL.addLast(30);
 LL.addAtIdx(2, 50);
 LL.addAtIdx(8, 45);
 LL.addAtIdx(6, 55);
+LL.removeTop();
+LL.removeLast();
 console.log("Size:", LL.size());
+LL.removeAtIdx(2);
 LL.printList();
