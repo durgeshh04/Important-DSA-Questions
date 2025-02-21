@@ -28,4 +28,4 @@ function Butterfly(n) {
   }
 }
 
-Butterfly(5);
+Butterfly(3);

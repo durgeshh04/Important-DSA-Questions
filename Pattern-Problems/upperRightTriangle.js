@@ -6,4 +6,4 @@ function upperRightTriangle(n) {
   }
 }
 
-upperLeftTriangle(5);
+upperRightTriangle(5);
