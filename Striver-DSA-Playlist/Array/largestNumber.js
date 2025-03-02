@@ -1,21 +1,17 @@
 class Solution {
-    // Function returns the second largest element
-    getSecondLargest(arr) {
-        // Code Here
-        
-        let firstMax = -Infinity;
-        let secondMax = -Infinity;
-        
+    /**
+    * @param number[] arr
+
+    * @returns number
+    */
+    largest(arr) {
+        // code here
+        let max = -Infinity;
         for(let i = 0; i < arr.length; i++){
-            if(arr[i] > firstMax){
-                secondMax = firstMax;
-                firstMax = arr[i];
-            } else if(arr[i] > secondMax && arr[i] < firstMax){
-                secondMax = arr[i];
+            if(max < arr[i]){
+                max = arr[i];
             }
         }
-        
-        return secondMax;
-        
+        return max;
     }
 }
