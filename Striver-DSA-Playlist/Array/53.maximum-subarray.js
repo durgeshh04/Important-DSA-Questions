@@ -11,15 +11,12 @@
  */
 var maxSubArray = function (nums) {
     let maxSum = 0;
-    for (let i = 0; i < nums.length-1; i++) {
-        let sum = 0;
-        for (let j = i; j < nums.length; j++) {
-            if (sum < 0) {
-                sum = 0;
-            }
-            sum += nums[j];
-            maxSum = Math.max(maxSum, sum);
+    let currSum = 0;
+    for (let i = 1; i < nums.length; i++) {
+        if (currSum < 0) {
+            currSum = 0;
         }
+        maxSum = Math.max(maxSum, currSum);
     }
     return maxSum;
 };
