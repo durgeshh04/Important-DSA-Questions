@@ -10,18 +10,18 @@
  * @return {number[]}
  */
 var countSmaller = function (nums) {
-    // let n = nums.length;
-    // let output = [];
-    // for (let i = 0; i < n; i++) {
-    //     let count = 0;
-    //     for (let j = i + 1; j < n; j++) {
-    //         if (nums[i] > nums[j]) {
-    //             count++;
-    //         }
-    //     }
-    //     output.push(count);
-    // }
-    // return output;
+    let n = nums.length;
+    let output = [];
+    for (let i = 0; i < n; i++) {
+        let count = 0;
+        for (let j = i + 1; j < n; j++) {
+            if (nums[i] > nums[j]) {
+                count++;
+            }
+        }
+        output.push(count);
+    }
+    return output;
 };
 // @lc code=end
 
