@@ -1,0 +1,9 @@
+* Brute-Force Approach:
+Use two nested loops and check is there any similar element is present or not
+
+
+* Optimised Approach:
+Implement sorting and check with the next element 
+
+* Optimal Approach:
+Use set two check is there any duplicate present or not
