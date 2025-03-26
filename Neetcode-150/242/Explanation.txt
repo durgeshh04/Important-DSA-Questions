@@ -1,0 +1,9 @@
+* Optimal approach: 
+
+- use for loop and map to store key-value of each char of s.
+
+- use another for loop to check char of t is present in map or not and if the value of char is equal to 0 then return false.
+
+- decrement value of char by 1 if it is present.
+
+- after completion the for loop return true.
