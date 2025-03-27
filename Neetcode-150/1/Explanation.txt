@@ -1,3 +1,8 @@
 * This is the basic problem 
--- solution 
-solve this problem with the help of map.
+
+-- solve this problem with the help of map.
+-- Take one for loop iterate through the array.
+-- Substract target value with the current value. of array while iterating through the array.
+-- Check it is it present in the map or not. 
+-- If it is present then return indexes. 
+-- Otherwise add number and it's index.
