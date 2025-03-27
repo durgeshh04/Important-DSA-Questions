@@ -1,0 +1,3 @@
+* This is the basic problem 
+-- solution 
+solve this problem with the help of map.
