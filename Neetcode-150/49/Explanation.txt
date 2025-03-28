@@ -1,0 +1,4 @@
+# Solution:
+-- Take a map add key and values in it with generating the keys as always with the help of array of size 26 with the value filled with 0.
+-- Always add the value if you find same key for the value.
+-- return the value of the map as array.
