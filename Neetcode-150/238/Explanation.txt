@@ -1,0 +1,5 @@
+# Solution:
+-- I've used the approach of prefix and postfix arrays.
+-- I've result array where I've stored the product of prefix and postfix array.
+-- Time complexity: O(n)
+-- Space complexity: O(n)
