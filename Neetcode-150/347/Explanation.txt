@@ -1,0 +1,5 @@
+-- Solution: 
+-- Used a hashmap to store the count of each number and then used a heap to store the top k elements.
+-- created a min heap and then added the elements to the heap and then popped the elements from the heap and added them to the result.
+-- Time Complexity: O(nlogk)
+-- Space Complexity: O(n)
