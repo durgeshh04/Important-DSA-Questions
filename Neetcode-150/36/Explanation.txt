@@ -1,0 +1,5 @@
+Solution: 36
+- Use a hashmap to store the index of each number in the array.
+- Then, iterate through the array and check if the difference between the current number and the target is in the hashmap.
+- If it is, return the indices of the two numbers.
+- If not, add the current number to the hashmap.
