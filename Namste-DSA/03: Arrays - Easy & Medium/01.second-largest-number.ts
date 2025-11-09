@@ -6,13 +6,13 @@ const secondLargetNumber = (arr: number[]): number | string => {
     if (firstLargest < arr[i]) {
       secondLargest = firstLargest;
       firstLargest = arr[i];
-    } else if (secondLargest < firstLargest && secondLargest < arr[i]) {
+    } else if (secondLargest < arr[i] && firstLargest != arr[i]) {
       secondLargest = arr[i];
     }
   }
 
   // Depends on what interviewer wants for this test case
-  if (secondLargest == firstLargest) {
+  if (secondLargest == -Infinity) {
     return "print whatever as interviewer wants";
   }
   return secondLargest;
